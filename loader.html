@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loader</title>
+    <link rel="stylesheet" href="loader.css" />
+  </head>
+  <body>
+    <main>
+      <div class="parent">
+        <p class="para">
+          Loading...
+          <script>
+            setTimeout(() => {
+              window.location.href =
+                "./website with core HTML and CSS/index.html"; // Redirect after 2 seconds
+            }, 2000);
+          </script>
+        </p>
+        <div class="child"></div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+nav .style-nav ul li .about-special::before {
+  position: absolute;
+  content: " ";
+  border-bottom: 3px solid darkred;
+  border-radius: 20px;
+  margin-top: 1.5rem;
+  width: 100%;
+  transition: all 0.25s linear;
+}
+@media (width<740px) {
+  nav .style-nav ul li .about-special::before {
+    margin-top: 1.2rem;
+  }
+}
+/* nav bar end here */
+main {
+  height: auto;
+  width: 99%;
+  margin: 0 auto;
+  padding: 20px;
+  /* margin: 2rem; */
+}
+.grid-wrap {
+  height: auto;
+}
+.grid-about-con {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(550px, 1fr));
+  grid-template-rows: repeat(1, minmax(300px, 1fr));
+  grid-auto-rows: 300px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 2rem;
+  height: 100%;
+}
+.about-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  padding: 10px;
+}
+.about-info h1 {
+  font-size: 7rem;
+  background: linear-gradient(to bottom, darkred, black);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.about-info p {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+.about-info ul {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.about-info ul li {
+  list-style: disc;
+  list-style-position: inside;
+  line-height: 3rem;
+  font-size: 1.4rem;
+  font-family: 500;
+}
+.about-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+@media (width<1220px) {
+  .grid-about-con {
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+    /* grid-template-columns: repeat(1, minmax(300px, 1fr)); */
+    grid-template-rows: repeat(2, minmax(500px, 1fr));
+  }
+}
+@media (width<640px) {
+  .grid-about-con {
+    grid-template-columns: repeat(1, minmax(220px, 1fr));
+    padding: 5px;
+  }
+  /* .about-pic {
+    display: none;
+  } */
+  .about-info {
+    padding: 5px;
+  }
+  main {
+    padding: 5px;
+  }
+  .about-info h1 {
+    font-size: 5rem;
+  }
+  .about-info p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+  .about-info ul {
+    font-size: 1.3rem;
+  }
+  .about-info ul li {
+    line-height: 2rem;
+    font-size: 1.1rem;
+  }
+}
+@media (width<440px) {
+  .about-info h1 {
+    font-size: 3rem;
+  }
+  .about-info p {
+    line-height: 1.5rem;
+  }
+  .about-info ul {
+    font-size: 1.1rem;
+  }
+  .about-info ul li {
+    line-height: 1.7rem;
+    font-size: 1rem;
+  }
+}

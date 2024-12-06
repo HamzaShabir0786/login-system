@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcom to our website</h1>
+      <br />
+      <div class="first">
+        <div class="label-div">
+          <label for="email">Email:</label>
+        </div>
+        <input
+          type="email"
+          placeholder="Enter your Email"
+          value=""
+          name="email"
+          id="email"
+          required
+          autocomplete="off"
+          autofocus
+        />
+      </div>
+      <br />
+      <div class="second">
+        <div class="label-div">
+          <label for="password">Password:</label>
+        </div>
+
+        <input
+          type="password"
+          name="password"
+          value=""
+          placeholder="Enter your Password"
+          id="password"
+          required
+        />
+        <i class="fa-solid fa-eye-slash unhide-btn"></i>
+      </div>
+
+      <span class="spany"> </span>
+      <br />
+      <br />
+      <input type="submit" value="Login" id="submit" />
+      <br />
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
